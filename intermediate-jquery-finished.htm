@@ -1,0 +1,77 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todooey | Intermediate jQuery</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app-finished.css" />
+  </head>
+  <body>
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas data-position="left">
+          <h4>Intermediate jQuery</h4>
+          <h5>Topics</h5>
+          <ul>
+            <li>Method chaining (and ending)</li>
+            <li>Find, children, siblings, parents</li>
+            <li>Selector context</li>
+            <li>Event handling</li>
+            <li>AJAX (high-level)</li>
+            <li>Arrays: each, grep, map</li>
+            <li>Cloning vs. templates</li>
+          </ul>
+
+          <h5>Resources</h5>
+          <dl>
+            <dt><a href="http://api.jquery.com">jQuery API</a></dt>
+            <dd>jQuery documentation with examples</dd>
+            <dt><a href="http://foundation.zurb.com">Foundation 6</a></dt>
+            <dd>UI framework from Zurb</dd>
+            <dt><a href="https://github.com/typicode/jsonplaceholder">JSONPlaceholder</a></dt>
+            <dd>Fake RESTful API returning JSON data</dd>
+          </dl>
+        </div>
+        <div class="off-canvas-content" data-off-canvas-content>
+          <div class="title-bar">
+            <div class="title-bar-left">
+              <button class="menu-icon" type="button" data-toggle="offCanvas"></button>
+              <span class="title-bar-title">Todooey</span>
+            </div>
+            <div class="title-bar-right">
+              <button id="add" type="button" class="button">&plus; Add</button>
+              <div id="counter" class="label"><span id="count">0</span>/<span id="total">0</span></div>
+            </div>
+          </div>
+          <div class="row">
+            <div id="todoList" class="small-9 columns small-centered">
+              Loading...
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/template" id="todoTemplate">
+      <article class="todo callout clearfix">
+        <div class="todo-action float-right">
+          <button type="button" class="remove button">x</button>
+        </div>
+        <div class="todo-status switch float-left">
+          <input class="switch-input" id="{0}" type="checkbox" {1}>
+          <label class="switch-paddle" for="{0}">
+            <span class="show-for-sr">Is Completed</span>
+          </label>
+        </div>
+        <h5>{2}</h5>
+      </article>
+    </script>
+
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/what-input.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/app-finished.js"></script>
+  </body>
+</html>

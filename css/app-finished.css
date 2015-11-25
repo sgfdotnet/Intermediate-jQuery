@@ -1,0 +1,162 @@
+body, h1, h2, h3, h4, h5 {
+  font-family: Oswald, 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+body, .off-canvas-content {
+  background: #263238;
+  color: #eeffff;
+}
+
+#offCanvas {
+  background: transparent;
+  color: #eeffff;
+  padding: 0.4rem 1rem;
+}
+
+  #offCanvas h4 {
+    color: #ffcb6b;
+  }
+
+  #offCanvas h5 {
+    color: #eeffff;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
+  }
+
+  #offCanvas ul {
+    font-weight: 300;
+    color: #eeffff;
+    margin-bottom: 3rem;
+  }
+
+  #offCanvas dl dd {
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+
+  #offCanvas a:focus {
+    outline: none;
+  }
+
+.title-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 200;
+  background: #121517;
+}
+
+  .title-bar .button {
+    margin-bottom: 0;
+    padding: 0.33333rem 1rem;
+    line-height: 1;
+    font-size: 1.2rem;
+    vertical-align: top;
+    border-width: 0;
+    background: #89ddff;
+    color: #1e282d;
+  }
+
+    .title-bar .button:hover,
+    .title-bar .button:focus {
+      background: #39c0f8;
+      color: #000;
+    }
+
+  .title-bar .label {
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    font-weight: 300;
+    background: #435057;
+    color: #546e7a;
+    min-width: 95px;
+  }
+
+    .title-bar .label.complete {
+      background: transparent;
+      color: #ffcb6b;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: normal;
+    }
+
+    .title-bar .label #count {
+      color: #ffcb6b;
+    }
+
+    .title-bar .label #total {
+      color: #eeffff;
+    }
+
+.title-bar-title {
+  text-transform: uppercase;
+  color: #f77669;
+}
+
+.off-canvas-content {
+  min-height: 650px;
+}
+
+#todoList {
+  margin-top: 60px;
+}
+
+.callout {
+  background: #1e282d;
+  color: #eeffff;
+  border-width: 0;
+}
+
+  .callout h5 {
+    font-weight: 300;
+  }
+
+  .callout .remove {
+    padding: 0.4rem 0.8rem;
+    background: #263238;
+    color: #f77669;
+    margin-bottom: 0;
+    margin-right: 0;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+  }
+
+    .callout .remove:hover,
+    .callout .remove:focus {
+      background: #435057;
+      color: #000;
+    }
+
+.switch {
+  margin-right: 1rem;
+}
+
+.switch-paddle {
+  border-radius: 1rem;
+  background: #435057;
+}
+
+  .switch-paddle::after {
+    border-radius: 1rem;
+    background: #546e7a;
+  }
+
+  .switch-paddle:hover {
+    background: #263238;
+  }
+
+input:checked ~ .switch-paddle {
+  background: #72cbc4;
+}
+
+  input:checked ~ .switch-paddle::after {
+    background: #c3e88d;
+  }
+
+  input:checked ~ .switch-paddle:hover {
+    background: #37aaa1;
+  }
